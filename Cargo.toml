@@ -1,0 +1,25 @@
+[package]
+name = "http-fresh"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.81"
+description = "Check HTTP response freshness for conditional GET (If-None-Match / If-Modified-Since vs ETag / Last-Modified, honoring Cache-Control: no-cache). A faithful port of the `fresh` npm package. Zero dependencies, no_std, no alloc."
+documentation = "https://docs.rs/http-fresh"
+repository = "https://github.com/trananhtung/http-fresh"
+homepage = "https://github.com/trananhtung/http-fresh"
+readme = "README.md"
+license = "MIT OR Apache-2.0"
+keywords = ["http", "cache", "fresh", "etag", "conditional"]
+categories = ["web-programming", "no-std"]
+authors = ["trananhtung"]
+exclude = ["/.github", "/.gitignore"]
+
+[dependencies]
+
+[lints.rust]
+missing_docs = "warn"
+unsafe_code = "forbid"
+
+[lints.clippy]
+all = "warn"
+pedantic = "warn"
